@@ -66,6 +66,7 @@ def override_tags(data):
         'DockerHost': 'DOCKER_HOST',
         'IpAddress': 'IP_ADDRESS',
         'Options': 'SWARM_OPTIONS',
+        'Token': 'TOKEN',
     }
 
     defaults = {
