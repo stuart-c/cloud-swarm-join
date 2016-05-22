@@ -45,7 +45,7 @@ def get_ec2_instance_tags():
     if not instance_id:
         return {}
 
-    ec2 = boto3.resource('ec2', region_name=os.environ.get('AWS_REGION'))
+    ec2 = boto3.resource('ec2', region_name=os.environ.get('AWS_REGION', 'eu-west-1'))
 
     instance = ec2.Instance(instance_id)
 
